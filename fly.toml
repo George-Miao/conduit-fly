@@ -1,7 +1,7 @@
 app = "conduit"
 
 [build]
-image = "matrixconduit/matrix-conduit:latest"
+image = "matrixconduit/matrix-conduit:next"
 
 [env]
 CONDUIT_SERVER_NAME             = "matrix.miao.dev"
@@ -14,6 +14,7 @@ CONDUIT_ALLOW_FEDERATION        = "true"
 CONDUIT_MAX_REQUEST_SIZE        = "20000000"
 CONDUIT_TRUSTED_SERVERS         = ["matrix.org"]
 CONDUIT_MAX_CONCURRENT_REQUESTS = "100"
+CONDUIT_DEFAULT_ROOM_VERSION    = "v9"
 CONDUIT_LOG                     = "info,rocket=off,_=off,sled=off"
 
 [mounts]
